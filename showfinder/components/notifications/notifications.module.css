@@ -1,0 +1,13 @@
+.notificationsPanel {
+  width: 90vw;
+}
+
+.notificationsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 2rem 0;
+}

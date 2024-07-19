@@ -14,21 +14,3 @@ export default function page() {
     </SearchProvider>
   );
 }
-
-// import Navigation from '@/components/Navigation';
-// import LeftPanel from '@/components/LeftPanel';
-// import ContentPanel from '@/components/ContentPanel';
-
-// const page = () => {
-//   return (
-//     <>
-//       <Navigation />
-//       <div className="mid-panel">
-//         <LeftPanel />
-//         <ContentPanel />
-//       </div>
-//     </>
-//   );
-// };
-
-// export default page;

@@ -1,17 +1,19 @@
-import LeftPanel from '@/components/LeftPanel';
-import Navigation from '@/components/Navigation';
-import NotificationsPanel from '@/components/NotificationsPanel';
+import Notifications from '@/components/notifications/Notifications';
+import Header from '@/components/header/Header';
+import Navbar from '@/components/navbar/Navbar';
+
 import React from 'react';
+import { SearchProvider } from '@/context/SearchProvider';
 
 const page = () => {
   return (
-    <>
-      <Navigation />
-      <div className="mid-panel">
-        <LeftPanel />
-        <NotificationsPanel />
+    <SearchProvider>
+      <Header />
+      <div className="layoutContainer">
+        <Navbar />
+        <Notifications />
       </div>
-    </>
+    </SearchProvider>
   );
 };
 

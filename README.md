@@ -1,2 +1,2 @@
-# ShowFinder
-ShowFinder - find your favorite TV show!
+# showFINDER
+showFINDER - find your favorite TV show!

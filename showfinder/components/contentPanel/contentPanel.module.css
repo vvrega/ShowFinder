@@ -1,0 +1,72 @@
+.contentPanel {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  margin-left: 5rem;
+}
+
+.showsPanel {
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: start;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding-top: 0.5rem;
+}
+
+.showBox {
+  position: relative;
+  margin: 0.625rem;
+  width: 12rem;
+  height: 20rem;
+  color: white;
+  background-color: black;
+}
+
+.showBox img {
+  height: 75%;
+  width: 100%;
+}
+
+.showGenres {
+  color: white;
+  font-size: 12px;
+  padding-left: 0.5rem;
+}
+
+.showTitle {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.showOverview {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  overflow-y: scroll;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+.showBox:hover .showOverview {
+  opacity: 1;
+}
+
+.noDataMessage {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+.active {
+  color: var(--deepPurple) !important;
+}
+
+.activeButton {
+  background-color: var(--pastelPurple);
+}
+
+.activeButton:hover {
+  background-color: #9760cf !important;
+}
+
+.navbarButton {
+  display: flex;
+  align-items: center;
+  width: 14rem;
+  height: 3.2rem;
+  border-radius: 12px;
+  margin-top: 0.1rem;
+}
+
+.navbarButton:hover {
+  background-color: #bebebe;
+  cursor: pointer;
+}
+
+.navbarIcon {
+  padding-left: 0.875rem;
+  color: #cecece;
+  margin-top: 5px;
+}
+
+.navbarParagraph {
+  font-size: 18px;
+  margin-left: 6px;
+  color: white;
+}

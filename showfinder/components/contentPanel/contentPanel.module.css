@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   width: 90vw;
-  /* background-color: #242424; */
-  /* background-color: pink; */
   margin-left: 5rem;
 }
 
@@ -17,19 +15,16 @@
   align-content: start;
   flex-wrap: wrap;
   overflow: auto;
-  /* padding-left: 2rem; */
   padding-top: 0.5rem;
 }
 
 .showBox {
   position: relative;
-  /* padding: 0.625rem; */
   margin: 0.625rem;
   width: 12rem;
   height: 20rem;
   color: white;
   background-color: black;
-  /* border-radius: 25px; */
 }
 
 .showBox img {
@@ -63,7 +58,6 @@
   overflow-y: scroll;
   font-size: 12px;
   padding: 0.5rem;
-  /* border-radius: 25px; */
 }
 
 .showBox:hover .showOverview {

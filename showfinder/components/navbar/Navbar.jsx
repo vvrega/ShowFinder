@@ -20,7 +20,7 @@ export default function Navbar() {
   const balance = '50.00';
 
   return (
-    <div className={style.navbar}>
+    <nav className={style.navbar}>
       <div className={style.accInfo}>
         <div className={style.userInfo}>
           <AccountCircleIcon style={{ fontSize: '60px', color: 'white' }} />
@@ -120,6 +120,6 @@ export default function Navbar() {
           active={pathname === '/logout'}
         />
       </div>
-    </div>
+    </nav>
   );
 }

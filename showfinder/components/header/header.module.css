@@ -9,7 +9,7 @@
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: bold;
   background: linear-gradient(90deg, #763eae 0%, #957dad 57%, #ffffff 100%);
   -webkit-background-clip: text;
@@ -44,9 +44,9 @@
 }
 
 .icons {
-  width: 7.4rem;
-  display: flex;
-  justify-content: space-between;
+  /* width: 7.4rem; */
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .icons:hover {

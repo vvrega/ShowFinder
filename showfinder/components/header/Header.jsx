@@ -6,6 +6,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function Header() {
+  const notificationsAmount = 5;
+
   const { searchTerm, setSearchTerm, handleSearch } = useSearch();
 
   const handleKeyDown = (e) => {
@@ -34,7 +36,7 @@ export default function Header() {
       />
       <div className={style.notifications}>
         <div className={style.icons}>
-          <div className={style.headerIcon}>
+          {/* <div className={style.headerIcon}>
             <EmailIcon
               style={{
                 fontSize: '50px',
@@ -43,7 +45,7 @@ export default function Header() {
                 marginTop: '5px',
               }}
             />
-          </div>
+          </div> */}
           <div className={style.headerIcon}>
             <Link href={'notifications'} style={{ textDecoration: 'none' }}>
               <NotificationsIcon
@@ -55,7 +57,7 @@ export default function Header() {
                 }}
               />
             </Link>
-            <div className={style.numNotifications}>5</div>
+            <div className={style.numNotifications}>{notificationsAmount}</div>
           </div>
         </div>
       </div>

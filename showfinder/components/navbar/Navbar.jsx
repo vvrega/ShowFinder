@@ -116,8 +116,8 @@ export default function Navbar() {
         <NavbarButton
           icon={<LogoutIcon style={{ fontSize: '32px' }} />}
           label="Logout"
-          href="/login"
-          active={pathname === '/logout'}
+          href="/"
+          active={pathname === '/'}
         />
       </div>
     </nav>

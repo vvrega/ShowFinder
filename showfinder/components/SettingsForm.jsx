@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import '../styles/shows.css';
 
 export default function SettingsForm() {
   const [newUsername, setNewUsername] = useState('');

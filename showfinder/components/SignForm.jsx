@@ -1,9 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+// import '../styles/shows.css';
+// import '../styles/sign.css';
 import '../styles/formStyles.css';
 
 export default function SignForm() {
+  const router = useRouter();
+
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState('');
   const [firstName, setFirstName] = useState('');
@@ -15,101 +20,8 @@ export default function SignForm() {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-    if (!firstName || !username || !password) {
-      alert('All fields are required!');
-    }
-
-    try {
-      const res = await fetch('api/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          firstName,
-          username,
-          password,
-        }),
-      });
-      if (res.ok) {
-        const form = e.target;
-        form.reset();
-      } else {
-        console.log('User registration failed.');
-      }
-    } catch (error) {
-      console.log('Error during registration: ', error);
-    }
+    router.push('/dashboard');
   };
-
-  // const handleSignUp = async (event) => {
-  //   event.preventDefault();
-
-  //   const newUsername = document.forms.signUpForm.newUsername.value;
-  //   const firstName = document.forms.signUpForm.firstName.value;
-  //   const newPassword = document.forms.signUpForm.newPassword.value;
-  //   const confirmPassword = document.forms.signUpForm.confirmPassword.value;
-
-  //   if (newPassword !== confirmPassword) {
-  //     alert('Passwords do not match');
-  //     return;
-  //   }
-
-  //   try {
-  //     const res = await fetch('/api/register', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         username: newUsername,
-  //         firstName,
-  //         password: newPassword,
-  //       }),
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (res.ok) {
-  //       alert('Registration successful!');
-  //       setIsSignUp(false);
-  //     } else {
-  //       alert(data.message);
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     alert('Something went wrong');
-  //   }
-  // };
-
-  // const handleSignIn = async (event) => {
-  //   event.preventDefault();
-
-  //   const username = document.forms.signInForm.username.value;
-  //   const password = document.forms.signInForm.password.value;
-
-  //   try {
-  //     const res = await fetch('/api/login', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({ username, password }),
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (res.ok) {
-  //       localStorage.setItem('token', data.token);
-  //       window.location.href = '/dashboard';
-  //     } else {
-  //       alert(data.message);
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     alert('Something went wrong');
-  //   }
-  // };
 
   return (
     <div className={`container ${isSignUp ? 'right-panel-active' : ''}`}>
@@ -119,7 +31,7 @@ export default function SignForm() {
           method="post"
           name="signUpForm"
           id="signUpForm"
-          // onSubmit={handleSignUp}
+          onSubmit={handleSignUp}
         >
           <h1>Create Account</h1>
           <input
@@ -160,7 +72,7 @@ export default function SignForm() {
           method="post"
           name="signInForm"
           id="signInForm"
-          // onSubmit={handleSignIn}
+          onSubmit={handleSignUp}
         >
           <h1>Sign in</h1>
           <input type="text" name="username" placeholder="Username" required />

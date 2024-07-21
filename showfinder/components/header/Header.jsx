@@ -3,7 +3,6 @@ import { useSearch } from '../../context/SearchProvider';
 import Link from 'next/link';
 import style from './header.module.css';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import EmailIcon from '@mui/icons-material/Email';
 
 export default function Header() {
   const notificationsAmount = 5;
@@ -35,30 +34,18 @@ export default function Header() {
         onChange={handleChange}
       />
       <div className={style.notifications}>
-        <div className={style.icons}>
-          {/* <div className={style.headerIcon}>
-            <EmailIcon
+        <div className={style.headerIcon}>
+          <Link href={'notifications'} style={{ textDecoration: 'none' }}>
+            <NotificationsIcon
               style={{
                 fontSize: '50px',
                 color: '#8a8a8a',
-                padding: '6px',
+                padding: '5px',
                 marginTop: '5px',
               }}
             />
-          </div> */}
-          <div className={style.headerIcon}>
-            <Link href={'notifications'} style={{ textDecoration: 'none' }}>
-              <NotificationsIcon
-                style={{
-                  fontSize: '50px',
-                  color: '#8a8a8a',
-                  padding: '5px',
-                  marginTop: '5px',
-                }}
-              />
-            </Link>
-            <div className={style.numNotifications}>{notificationsAmount}</div>
-          </div>
+          </Link>
+          <div className={style.numNotifications}>{notificationsAmount}</div>
         </div>
       </div>
     </div>

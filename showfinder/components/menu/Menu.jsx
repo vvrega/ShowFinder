@@ -1,8 +1,11 @@
 'use client';
 
+import { useContext } from 'react';
 import { usePathname } from 'next/navigation';
-import NavbarButton from '../navbarButton/NavbarButton';
-import style from './navbar.module.css';
+
+import { UserContext } from '@/context/UserProvider';
+import MenuButton from '../menuButton/MenuButton';
+import style from './menu.module.css';
 
 import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -14,19 +17,20 @@ import MovieIcon from '@mui/icons-material/Movie';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-export default function Navbar() {
+export default function Menu() {
+  const { userName } = useContext(UserContext);
+
   const pathname = usePathname('');
-  const userName = 'Guest';
   const balance = '50.00';
 
   return (
-    <nav className={style.navbar}>
+    <div className={style.menu}>
       <div className={style.accInfo}>
         <div className={style.userInfo}>
-          <AccountCircleIcon style={{ fontSize: '60px', color: 'white' }} />
-          <div className={style.userInfo2}>
-            <p className={style.username}>{userName}</p>
-          </div>
+          <AccountCircleIcon
+            style={{ fontSize: '60px', color: 'white', marginLeft: '10px' }}
+          />
+          <p className={style.username}>{userName}</p>
         </div>
         <div className={style.balance}>
           <div>
@@ -43,8 +47,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className={style.navbarButtons}>
-        <NavbarButton
+      <div className={style.MenuButtons}>
+        <MenuButton
           icon={
             <HomeIcon
               style={{ fontSize: '32px' }}
@@ -55,7 +59,7 @@ export default function Navbar() {
           href="/dashboard"
           active={pathname === '/dashboard'}
         />
-        <NavbarButton
+        <MenuButton
           icon={
             <FavoriteIcon
               style={{ fontSize: '32px' }}
@@ -66,7 +70,7 @@ export default function Navbar() {
           href="/favorite"
           active={pathname === '/favorite'}
         />
-        <NavbarButton
+        <MenuButton
           icon={
             <WatchLaterIcon
               style={{ fontSize: '32px' }}
@@ -77,7 +81,7 @@ export default function Navbar() {
           href=""
           active={pathname === '/saved-for-later'}
         />
-        <NavbarButton
+        <MenuButton
           icon={
             <MovieIcon
               style={{ fontSize: '32px' }}
@@ -88,7 +92,7 @@ export default function Navbar() {
           href=""
           active={pathname === '/bonuses'}
         />
-        <NavbarButton
+        <MenuButton
           icon={
             <EventIcon
               style={{ fontSize: '32px' }}
@@ -102,7 +106,7 @@ export default function Navbar() {
       </div>
 
       <div className={style.bottomButtons}>
-        <NavbarButton
+        <MenuButton
           icon={
             <SettingsIcon
               style={{ fontSize: '32px' }}
@@ -113,13 +117,13 @@ export default function Navbar() {
           href="/settings"
           active={pathname === '/settings'}
         />
-        <NavbarButton
+        <MenuButton
           icon={<LogoutIcon style={{ fontSize: '32px' }} />}
           label="Logout"
           href="/"
           active={pathname === '/'}
         />
       </div>
-    </nav>
+    </div>
   );
 }

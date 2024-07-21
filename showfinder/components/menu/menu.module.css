@@ -1,12 +1,17 @@
-.navbar {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 14vw;
+  width: 224px;
   height: calc(100vh - 4rem);
-  margin-left: 1.5rem;
-  /* background-color: pink; */
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  padding-bottom: 5px;
 }
 
 .accInfo {
@@ -16,7 +21,7 @@
   align-items: center;
   background-color: var(--deepPurple);
   border-radius: 20px;
-  width: 14rem;
+  width: 13rem;
   height: 10rem;
   margin-top: 2rem;
 }
@@ -24,21 +29,14 @@
 .userInfo {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 11rem;
-  /* height: 7.4375rem; */
+  width: 13rem;
   padding-bottom: 1rem;
-}
-
-.userInfo2 {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  color: white;
 }
 
 .username {
   font-size: 1.3rem;
+  color: white;
+  padding-left: 10px;
 }
 
 .phoneNumber {
@@ -78,7 +76,6 @@
 
 .creditCard {
   font-size: 25px;
-  padding-right: 5px;
 }
 
 .balanceParagraph {
@@ -100,53 +97,11 @@
 
 .addBalance:hover {
   cursor: pointer;
-  /* border: 1px solid #eeeeee; */
 }
 
 .balanceAddButton {
   padding-left: 2.875rem;
 }
-
-.navbarButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* width: 14rem; */
-  width: 100%;
-  /* height: 13.75rem; */
-  /* margin-bottom: 11rem; */
-}
-
-.navbarButton {
-  display: flex;
-  align-items: center;
-  width: 14rem;
-  height: 3.2rem;
-  border-radius: 12px;
-}
-
-.navbarButton:hover {
-  background-color: #bebebe;
-  cursor: pointer;
-}
-
-.navbarIcon {
-  padding-left: 0.875rem;
-  color: #cecece;
-  margin-top: 5px;
-}
-
-.navbarParagraph {
-  font-size: 18px;
-  margin-left: 6px;
-  color: white;
-}
-
-.bottomButtons {
-  padding-bottom: 20px;
-}
-
 .active {
   color: var(--deepPurple) !important;
 }

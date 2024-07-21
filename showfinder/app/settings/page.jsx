@@ -1,16 +1,19 @@
 import Header from '@/components/header/Header';
-import Navbar from '@/components/navbar/Navbar';
-import SettingsForm from '@/components/SettingsForm';
+import Menu from '@/components/menu/Menu';
+import Settings from '@/components/settings/Settings';
 import { SearchProvider } from '@/context/SearchProvider';
+import { UserProvider } from '@/context/UserProvider';
 
 const page = () => {
   return (
     <SearchProvider>
-      <Header />
-      <div className="layoutContainer">
-        <Navbar />
-        <SettingsForm />
-      </div>
+      <UserProvider>
+        <Header />
+        <div className="layoutContainer">
+          <Menu />
+          <Settings />
+        </div>
+      </UserProvider>
     </SearchProvider>
   );
 };

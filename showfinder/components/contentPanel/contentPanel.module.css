@@ -3,8 +3,8 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 90vw;
-  margin-left: 5rem;
+  width: 86vw;
+  margin-left: 18rem;
 }
 
 .showsPanel {
@@ -47,9 +47,9 @@
 
 .showOverview {
   position: absolute;
-  top: 0px;
+  top: 0;
   bottom: 0;
-  left: 0px;
+  left: 0;
   right: 0;
   background-color: black;
   color: white;
@@ -58,6 +58,7 @@
   overflow-y: scroll;
   font-size: 12px;
   padding: 0.5rem;
+  scrollbar-color: #838383 transparent;
 }
 
 .showBox:hover .showOverview {

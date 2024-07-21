@@ -1,16 +1,19 @@
 import { SearchProvider } from '../../context/SearchProvider';
+import { UserProvider } from '@/context/UserProvider';
 import ContentPanel from '@/components/contentPanel/ContentPanel';
 import Header from '@/components/header/Header';
-import Navbar from '@/components/navbar/Navbar';
+import Menu from '@/components/menu/Menu';
 
 export default function page() {
   return (
     <SearchProvider>
-      <Header />
-      <div className="layoutContainer">
-        <Navbar />
-        <ContentPanel />
-      </div>
+      <UserProvider>
+        <Header />
+        <div className="layoutContainer">
+          <Menu />
+          <ContentPanel />
+        </div>
+      </UserProvider>
     </SearchProvider>
   );
 }

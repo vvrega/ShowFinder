@@ -1,5 +1,6 @@
 .notificationsPanel {
-  width: 90vw;
+  width: 86vw;
+  margin-left: 14rem;
 }
 
 .notificationsContainer {
@@ -10,4 +11,5 @@
   overflow: scroll;
   overflow-x: hidden;
   padding: 2rem 0;
+  scrollbar-color: #838383 transparent;
 }

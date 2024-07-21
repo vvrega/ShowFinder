@@ -43,12 +43,6 @@
   height: 3.75rem;
 }
 
-.icons {
-  /* width: 7.4rem; */
-  /* display: flex;
-  justify-content: space-between; */
-}
-
 .icons:hover {
   cursor: pointer;
   animation: shake, 0.5s;

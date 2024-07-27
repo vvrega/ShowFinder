@@ -3,9 +3,11 @@
 import { useContext, useState } from 'react';
 import style from './settings.module.css';
 import { UserContext } from '@/context/UserProvider';
+import { CollapseContext } from '@/context/CollapseProvider';
 
 export default function Settings() {
   const { setUserName } = useContext(UserContext);
+  const { collapse } = useContext(CollapseContext);
   const [newUsername, setNewUsername] = useState('');
 
   const handleSubmit = (e) => {
@@ -14,7 +16,9 @@ export default function Settings() {
   };
 
   return (
-    <div className={style.settingsPanel}>
+    <div
+      className={`${style.settingsPanel} ${collapse ? style.collapsed : ''}`}
+    >
       <div className={style.settingsContainer}>
         <form className={style.formContainer} onSubmit={handleSubmit}>
           <label className={style.formLabel} htmlFor="newUsername">

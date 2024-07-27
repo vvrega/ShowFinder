@@ -35,3 +35,29 @@
   margin-left: 6px;
   color: white;
 }
+
+.collapsed .menuParagraph {
+  display: none;
+}
+
+.collapsed .menuButton {
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.collapsed .menuIcon {
+  padding: 0px;
+}
+
+.collapsed .activeButton {
+  background-color: transparent;
+}
+
+.collapsed .menuButton:hover {
+  background-color: transparent;
+}
+
+.collapsed .activeButton:hover {
+  background-color: transparent !important;
+}

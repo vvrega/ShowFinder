@@ -29,6 +29,7 @@
   text-indent: 15px;
   caret-color: var(--lightGray);
   color: #8a8a8a;
+  margin-left: 10px;
 }
 
 .searchInput:focus {
@@ -90,4 +91,14 @@
   text-align: center;
   top: 0.5rem;
   right: 0.1rem;
+}
+
+@media (max-width: 455px) {
+  .logo {
+    display: none;
+  }
+
+  .header {
+    padding: 0 0.2rem;
+  }
 }

@@ -5,16 +5,19 @@ import Menu from '@/components/menu/Menu';
 import React from 'react';
 import { SearchProvider } from '@/context/SearchProvider';
 import { UserProvider } from '@/context/UserProvider';
+import { CollapseProvider } from '@/context/CollapseProvider';
 
 const page = () => {
   return (
     <SearchProvider>
       <UserProvider>
-        <Header />
-        <div className="layoutContainer">
-          <Menu />
-          <Notifications />
-        </div>
+        <CollapseProvider>
+          <Header />
+          <div className="layoutContainer">
+            <Menu />
+            <Notifications />
+          </div>
+        </CollapseProvider>
       </UserProvider>
     </SearchProvider>
   );

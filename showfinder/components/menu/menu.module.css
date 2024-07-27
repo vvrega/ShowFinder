@@ -1,3 +1,19 @@
+.menuContainer {
+  position: relative;
+  display: flex;
+}
+
+.backdrop {
+  display: block;
+  position: fixed;
+  left: 224px;
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -12,6 +28,14 @@
   scrollbar-width: none;
   overflow-x: hidden;
   padding-bottom: 5px;
+}
+
+.collapsed {
+  width: 50px;
+}
+
+.collapsed .accInfo {
+  display: none;
 }
 
 .accInfo {
@@ -102,6 +126,15 @@
 .balanceAddButton {
   padding-left: 2.875rem;
 }
+
 .active {
   color: var(--deepPurple) !important;
+}
+
+.collapseButton {
+  background-color: transparent;
+  outline: 0px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
 }

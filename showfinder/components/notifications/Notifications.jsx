@@ -1,9 +1,20 @@
+'use client';
+
 import style from './notifications.module.css';
 import { Notification } from '../notification/Notification';
 
+import { useContext } from 'react';
+import { CollapseContext } from '@/context/CollapseProvider';
+
 export default function Notifications() {
+  const { collapse } = useContext(CollapseContext);
+
   return (
-    <div className={style.notificationsPanel}>
+    <div
+      className={`${style.notificationsPanel} ${
+        collapse ? style.collapsed : ''
+      }`}
+    >
       <div className={style.notificationsContainer}>
         <Notification
           heading={'New Content Alert:'}

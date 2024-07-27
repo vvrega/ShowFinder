@@ -3,8 +3,14 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 86vw;
-  margin-left: 18rem;
+  width: calc(100vw - 224px);
+  margin-left: 224px;
+  padding: 0 2rem;
+}
+
+.collapsed {
+  width: calc(100vw - 50px);
+  margin-left: 50px;
 }
 
 .showsPanel {
@@ -70,4 +76,8 @@
   font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
+}
+
+.collapsed .showsPanel {
+  scrollbar-color: transparent transparent;
 }

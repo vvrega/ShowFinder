@@ -3,8 +3,8 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 86vw;
-  margin-left: 14rem;
+  width: calc(100vw - 224px);
+  margin-left: 224px;
 }
 
 .showsContainer {
@@ -28,4 +28,9 @@
 .favP {
   color: white;
   font-size: 1.2rem;
+}
+
+.collapsed {
+  width: calc(100vw - 50px);
+  margin-left: 50px;
 }

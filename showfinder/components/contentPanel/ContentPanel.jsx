@@ -1,12 +1,17 @@
 'use client';
 import { useSearch } from '../../context/SearchProvider';
+import { CollapseContext } from '@/context/CollapseProvider';
+import { useContext } from 'react';
+
 import style from './contentPanel.module.css';
 
 export default function ContentPanel() {
   const { searchResults } = useSearch();
 
+  const { collapse } = useContext(CollapseContext);
+
   return (
-    <div className={style.contentPanel}>
+    <div className={`${style.contentPanel} ${collapse ? style.collapsed : ''}`}>
       {searchResults.length > 0 ? (
         <div className={style.showsPanel}>
           {searchResults.map((showData, index) => {

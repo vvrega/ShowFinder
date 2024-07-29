@@ -1,0 +1,359 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/favorite/favorite.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.favorite_favoritePanel__B1VV_ {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 224px);
+  margin-left: 224px;
+}
+
+.favorite_showsContainer__4N3US {
+  padding: 2rem 0 0 2rem;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.favorite_favoriteInfo__fI7_d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.favorite_favP__nHQoM {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.favorite_collapsed__0Va9r {
+  width: calc(100vw - 50px);
+  margin-left: 50px;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/header/header.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__dGL52 {
+  display: flex;
+  height: 4rem;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: #2d2d30;
+}
+
+.header_logo__zlk1H {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #763eae 0%, #957dad 57%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.header_searchInput__uwa_q {
+  height: 2.5rem;
+  width: 25rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 15px;
+  caret-color: var(--lightGray);
+  color: #8a8a8a;
+  margin-left: 10px;
+}
+
+.header_searchInput__uwa_q:focus {
+  outline: none;
+}
+
+.header_notifications__gKZkN {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10.25rem;
+  height: 3.75rem;
+}
+
+.header_icons__hTKB8:hover {
+  cursor: pointer;
+  animation: header_shake__esY7s, 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.header_headerIcon__CjKGG {
+  position: relative;
+}
+
+@keyframes header_shake__esY7s {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.header_headerIcon__CjKGG:hover {
+  animation: header_shake__esY7s 0.9s both;
+}
+
+.header_numNotifications__s8JPn {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  background-color: var(--deepPurple);
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 10px;
+  line-height: 22px;
+  text-align: center;
+  top: 0.5rem;
+  right: 0.1rem;
+}
+
+@media (max-width: 455px) {
+  .header_logo__zlk1H {
+    display: none;
+  }
+
+  .header_header__dGL52 {
+    padding: 0 0.2rem;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/menuButton/menuButton.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.menuButton_active__fLqfY {
+  color: var(--deepPurple) !important;
+}
+
+.menuButton_activeButton__Eck87 {
+  background-color: var(--pastelPurple);
+}
+
+.menuButton_activeButton__Eck87:hover {
+  background-color: #9760cf !important;
+}
+
+.menuButton_menuButton__YaF2i {
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  height: 3.2rem;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.menuButton_menuButton__YaF2i:hover {
+  background-color: #bebebe;
+  cursor: pointer;
+}
+
+.menuButton_menuIcon__hbjfA {
+  padding-left: 0.875rem;
+  color: #cecece;
+  margin-top: 5px;
+}
+
+.menuButton_menuParagraph__2GUuu {
+  font-size: 18px;
+  margin-left: 6px;
+  color: white;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_menuParagraph__2GUuu {
+  display: none;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_menuButton__YaF2i {
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_menuIcon__hbjfA {
+  padding: 0px;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_activeButton__Eck87 {
+  background-color: transparent;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_menuButton__YaF2i:hover {
+  background-color: transparent;
+}
+
+.menuButton_collapsed__xDEF2 .menuButton_activeButton__Eck87:hover {
+  background-color: transparent !important;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/menu/menu.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.menu_menuContainer__75I1z {
+  position: relative;
+  display: flex;
+}
+
+.menu_backdrop__8SXo4 {
+  display: block;
+  position: fixed;
+  left: 224px;
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.menu_menu__dbtxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 224px;
+  height: calc(100vh - 4rem);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  padding-bottom: 5px;
+}
+
+.menu_collapsed__keQDo {
+  width: 50px;
+}
+
+.menu_collapsed__keQDo .menu_accInfo__tL6bl {
+  display: none;
+}
+
+.menu_accInfo__tL6bl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--deepPurple);
+  border-radius: 20px;
+  width: 13rem;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.menu_userInfo__4gcta {
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  padding-bottom: 1rem;
+}
+
+.menu_username__8vCPB {
+  font-size: 1.3rem;
+  color: white;
+  padding-left: 10px;
+}
+
+.menu_phoneNumber__y5YN0 {
+  font-size: 12px;
+  color: #eeeeee;
+  padding-top: 5px;
+}
+
+.menu_person__JELU0 {
+  color: black;
+  font-size: 2.5rem;
+  background-color: #cecece;
+  border-radius: 50px;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 56px;
+}
+
+.menu_balance__uhEoh {
+  display: flex;
+  align-items: end;
+  padding-bottom: 4px;
+  width: 10rem;
+}
+
+.menu_balanceIcon__jiqy8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 4.375rem;
+  color: white;
+  font-size: 20px;
+  background-color: var(--deepPurple);
+}
+
+.menu_creditCard__JbKB4 {
+  font-size: 25px;
+}
+
+.menu_balanceParagraph__cnrP0 {
+  color: #eeeeee;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.menu_addBalance__m5kva {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--deepPurple);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.menu_addBalance__m5kva:hover {
+  cursor: pointer;
+}
+
+.menu_balanceAddButton__IBcO1 {
+  padding-left: 2.875rem;
+}
+
+.menu_active__JzoLB {
+  color: var(--deepPurple) !important;
+}
+
+.menu_collapseButton__LtopN {
+  background-color: transparent;
+  outline: 0px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+}
+

@@ -1,0 +1,20 @@
+.notificationsPanel {
+  width: calc(100vw - 224px);
+  margin-left: 224px;
+}
+
+.notificationsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  scrollbar-color: #838383 transparent;
+}
+
+.collapsed {
+  width: calc(100vw - 50px);
+  margin-left: 50px;
+}

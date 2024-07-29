@@ -1,0 +1,63 @@
+.active {
+  color: var(--deepPurple) !important;
+}
+
+.activeButton {
+  background-color: var(--pastelPurple);
+}
+
+.activeButton:hover {
+  background-color: #9760cf !important;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  height: 3.2rem;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.menuButton:hover {
+  background-color: #bebebe;
+  cursor: pointer;
+}
+
+.menuIcon {
+  padding-left: 0.875rem;
+  color: #cecece;
+  margin-top: 5px;
+}
+
+.menuParagraph {
+  font-size: 18px;
+  margin-left: 6px;
+  color: white;
+}
+
+.collapsed .menuParagraph {
+  display: none;
+}
+
+.collapsed .menuButton {
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.collapsed .menuIcon {
+  padding: 0px;
+}
+
+.collapsed .activeButton {
+  background-color: transparent;
+}
+
+.collapsed .menuButton:hover {
+  background-color: transparent;
+}
+
+.collapsed .activeButton:hover {
+  background-color: transparent !important;
+}

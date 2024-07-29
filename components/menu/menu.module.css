@@ -1,0 +1,140 @@
+.menuContainer {
+  position: relative;
+  display: flex;
+}
+
+.backdrop {
+  display: block;
+  position: fixed;
+  left: 224px;
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 224px;
+  height: calc(100vh - 4rem);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  padding-bottom: 5px;
+}
+
+.collapsed {
+  width: 50px;
+}
+
+.collapsed .accInfo {
+  display: none;
+}
+
+.accInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--deepPurple);
+  border-radius: 20px;
+  width: 13rem;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  padding-bottom: 1rem;
+}
+
+.username {
+  font-size: 1.3rem;
+  color: white;
+  padding-left: 10px;
+}
+
+.phoneNumber {
+  font-size: 12px;
+  color: #eeeeee;
+  padding-top: 5px;
+}
+
+.person {
+  color: black;
+  font-size: 2.5rem;
+  background-color: #cecece;
+  border-radius: 50px;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 56px;
+}
+
+.balance {
+  display: flex;
+  align-items: end;
+  padding-bottom: 4px;
+  width: 10rem;
+}
+
+.balanceIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 4.375rem;
+  color: white;
+  font-size: 20px;
+  background-color: var(--deepPurple);
+}
+
+.creditCard {
+  font-size: 25px;
+}
+
+.balanceParagraph {
+  color: #eeeeee;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.addBalance {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--deepPurple);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.addBalance:hover {
+  cursor: pointer;
+}
+
+.balanceAddButton {
+  padding-left: 2.875rem;
+}
+
+.active {
+  color: var(--deepPurple) !important;
+}
+
+.collapseButton {
+  background-color: transparent;
+  outline: 0px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+}

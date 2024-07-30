@@ -1,5 +1,3 @@
 {
-  "/favorite/page": "app/favorite/page.js",
-  "/settings/page": "app/settings/page.js",
   "/dashboard/page": "app/dashboard/page.js"
 }

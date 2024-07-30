@@ -1,0 +1,209 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/sign/sign.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.sign_formWrapper__7las4 {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+.sign_h1__I7_7P {
+  font-weight: bold;
+  margin: 0;
+}
+
+.sign_h2__gUVWM {
+  text-align: center;
+}
+
+.sign_p__lnH_v {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.sign_span__WKJ9m {
+  font-size: 12px;
+}
+
+.sign_a__rfYC1 {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.sign_button__PGZY_ {
+  border-radius: 20px;
+  border: 1px solid #763eae;
+  background-color: #763eae;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.sign_button__PGZY_:active {
+  transform: scale(0.95);
+}
+
+.sign_button__PGZY_:focus {
+  outline: none;
+}
+
+.sign_ghost__Yivvh {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.sign_form__O45Ft {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.sign_input__D8c8p {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.sign_container__32Ei_ {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.sign_formContainer__aSZae {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign_signInContainer__YghxQ {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_signInContainer__YghxQ {
+  transform: translateX(100%);
+}
+
+.sign_signUpContainer__etiIK {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_signUpContainer__etiIK {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: sign_show__Vh6tG 0.6s;
+}
+
+@keyframes sign_show__Vh6tG {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.sign_overlayContainer__hQ3Ai {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_overlayContainer__hQ3Ai {
+  transform: translateX(-100%);
+}
+
+.sign_overlay__QgmEK {
+  background: #c941ff;
+  background: linear-gradient(to right, #b52bff, #650c95);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_overlay__QgmEK {
+  transform: translateX(50%);
+}
+
+.sign_overlayPanel__d5DH7 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.sign_overlayLeft__cNRl_ {
+  transform: translateX(-20%);
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_overlayLeft__cNRl_ {
+  transform: translateX(0);
+}
+
+.sign_overlayRight__JYsXL {
+  right: 0;
+  transform: translateX(0);
+}
+
+.sign_container__32Ei_.sign_rightPanelActive__rnfCF .sign_overlayRight__JYsXL {
+  transform: translateX(20%);
+}
+

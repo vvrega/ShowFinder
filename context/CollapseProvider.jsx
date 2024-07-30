@@ -6,14 +6,19 @@ export const CollapseContext = createContext();
 
 export const CollapseProvider = ({ children }) => {
   const getInitialCollapseState = () => {
-    const storedCollapse = localStorage.getItem('collapse');
-    return storedCollapse !== null ? JSON.parse(storedCollapse) : false;
+    if (typeof window !== 'undefined') {
+      const storedCollapse = localStorage.getItem('collapse');
+      return storedCollapse !== null ? JSON.parse(storedCollapse) : false;
+    }
+    return false;
   };
 
   const [collapse, setCollapse] = useState(getInitialCollapseState);
 
   useEffect(() => {
-    localStorage.setItem('collapse', JSON.stringify(collapse));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('collapse', JSON.stringify(collapse));
+    }
   }, [collapse]);
 
   return (

@@ -1,17 +1,22 @@
 'use client';
 
-import React, { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [userName, setUserName] = useState(() => {
-    const savedName = localStorage.getItem('userName');
-    return savedName ? savedName : 'Guest';
+    if (typeof window !== 'undefined') {
+      const savedName = localStorage.getItem('userName');
+      return savedName ? savedName : 'Guest';
+    }
+    return 'Guest';
   });
 
   useEffect(() => {
-    localStorage.setItem('userName', userName);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('userName', userName);
+    }
   }, [userName]);
 
   return (

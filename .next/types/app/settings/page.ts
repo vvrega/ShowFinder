@@ -1,4 +1,4 @@
-// File: /Users/marcin/ShowFinder/showFINDER/app/settings/page.jsx
+// File: /Users/marcin/show/app/settings/page.jsx
 import * as entry from '../../../../app/settings/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -4,7 +4,6 @@ import { useContext, useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 import { CollapseContext } from '@/context/CollapseProvider';
-
 import { UserContext } from '@/context/UserProvider';
 import MenuButton from '../menuButton/MenuButton';
 import style from './menu.module.css';
@@ -32,17 +31,22 @@ export default function Menu() {
     setCollapse(!collapse);
   };
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
-    const handleResize = () => {
+    // Check if window is defined
+    if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
-    };
 
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (

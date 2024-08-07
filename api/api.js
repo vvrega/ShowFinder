@@ -2,7 +2,7 @@ const fetchData = async (name) => {
   if (name.length > 0)
     try {
       const response = await fetch(
-        'http://api.tvmaze.com/search/shows?q=' + name.trim()
+        'https://api.tvmaze.com/search/shows?q=' + name.trim()
       );
 
       const data = await response.json();
